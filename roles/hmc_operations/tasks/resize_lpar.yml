@@ -1,0 +1,11 @@
+---
+- name: Validate required variables
+  ansible.builtin.assert:
+    that:
+      - lpar_name is defined
+      - managed_system is defined
+    fail_msg: "lpar_name and managed_system must be provided"
+
+- name: Placeholder - implement LPAR resize
+  ansible.builtin.debug:
+    msg: "Resize of {{ lpar_name }} on {{ managed_system }} not yet implemented"

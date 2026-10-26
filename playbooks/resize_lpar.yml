@@ -1,0 +1,11 @@
+---
+# Resize an LPAR (CPU / memory) through the HMC.
+# Required extra vars: lpar_name, managed_system
+- name: Resize LPAR
+  hosts: hmc
+  gather_facts: false
+  tasks:
+    - name: Run LPAR resize tasks
+      ansible.builtin.include_role:
+        name: hmc_operations
+        tasks_from: resize_lpar

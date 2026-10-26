@@ -1,0 +1,10 @@
+---
+# Collect logs from Power systems via the HMC.
+- name: Collect logs
+  hosts: hmc
+  gather_facts: false
+  tasks:
+    - name: Run log collection tasks
+      ansible.builtin.include_role:
+        name: hmc_operations
+        tasks_from: collect_logs

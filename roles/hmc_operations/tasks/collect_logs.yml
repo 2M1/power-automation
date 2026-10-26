@@ -1,0 +1,4 @@
+---
+- name: Placeholder - implement HMC log collection
+  ansible.builtin.debug:
+    msg: "Log collection on {{ inventory_hostname }} not yet implemented"

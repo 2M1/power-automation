@@ -1,0 +1,5 @@
+---
+# Health check tasks for Power systems.
+- name: Placeholder - implement health checks
+  ansible.builtin.debug:
+    msg: "Health check for {{ inventory_hostname }} not yet implemented"

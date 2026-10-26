@@ -1,0 +1,7 @@
+---
+# Run health checks against Power systems.
+- name: Power health check
+  hosts: power
+  gather_facts: false
+  roles:
+    - power_health

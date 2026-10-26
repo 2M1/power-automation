@@ -1,0 +1,5 @@
+---
+# Entry point for hmc_operations. Playbooks normally use tasks_from.
+- name: Placeholder - select a task file via tasks_from
+  ansible.builtin.debug:
+    msg: "Use tasks_from: collect_logs or resize_lpar"
